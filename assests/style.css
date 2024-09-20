@@ -1,0 +1,328 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+
+
+
+body {
+ 
+    background-color: #e6e6e6;
+    position: relative;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+}
+ul{
+    list-style: none;
+}
+
+/* header */
+.header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    
+    
+
+}
+.navbar {
+    
+    padding: 1rem;
+    
+}
+
+h1 {
+    margin-top: 10px;
+}
+header ul {
+    margin-top: 10px;
+}
+
+header ul li {
+    display: inline;
+    margin-right: 10px;
+    padding: 0px 10px;
+}
+
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px;
+}
+
+.navbar ul li a:hover {
+    background-color: #555;
+    color: gold;
+    border-radius: 5px;
+}
+
+.user-skils li:not(:last-of-type) {
+    border-right: 0.5px solid white;
+}
+/* About Section */
+
+.about-me {
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+}
+
+.about-me h2 {
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px;
+}
+
+.about-me p {
+    font-size: 16px;
+    font-weight: 300;
+    padding: 0px 10px;
+    text-align: left;
+}
+
+.about-image {
+    
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    margin-top: 15px;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  
+}
+
+
+
+/* Skills Section */
+.skills {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-image: url('https://thumbs.dreamstime.com/b/design-concept-word-skill-website-banner-143236143.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+   
+}
+
+.skills h2 {
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 10px 0px;
+}
+
+.skills ul {
+    background-color: #757575ca;
+    padding: 15px;
+    margin: auto;
+    border-radius: 15px;
+    margin-bottom: 30px;
+}
+
+.skill-item {
+    display: inline-block;
+    background-color: green;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    margin-top: 5px;
+    margin-left: 10px;
+
+   
+    
+}
+
+.skill-item:hover{
+    animation: moveUpDown 1.5s ease-in-out infinite;
+}
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0); /* Starting position */
+    }
+    50% {
+        transform: translateY(-10px); /* Move up by 20px */
+    }
+    100% {
+        transform: translateY(0); /* Return to the starting position */
+    }
+}
+
+#skills-float-card {
+    width: 200px;
+    height: 220px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: purple;
+    text-align: center;
+    position: absolute;
+   top: -216px;
+   left: 40px;
+}
+
+#skills-float-card h3 {
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: capitalize;
+    padding: 10px 5px;
+}
+
+
+ 
+
+/* Projects Section */
+.projects {
+    background-color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+    padding: 10px 10px 30px 10px;
+
+}
+
+.projects h2 {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: capitalize;
+    margin: 10px 0px;
+}
+
+.project-box{
+    width: 200px;
+    height: 230px;
+    padding: 8px;
+    text-align: center;
+    margin:0px 0px 0px 20px;
+    border-radius: 8px;
+}
+.project-box:first-of-type {
+background-color: orange;
+margin-bottom: 20px;
+}
+.project-box:nth-of-type(2) {
+background-color: blue;
+
+}
+.project-box:last-of-type {
+    
+background-color: rgb(109, 109, 109);
+width: 105%;
+}
+
+.project-box h3{
+    padding: 5px;
+}
+
+/* Contact Section */
+.contact-section {
+    margin-top: 20px;
+    background-color: #c7c7c7;
+    border-radius: 10px;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section form input, .contact-section form textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+}
+.contact-section form input:focus {
+    transform: scale(1.01);
+}
+.contact-section button {
+    padding: 10px 20px;
+    background-color: #ff5722;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.contact-section button:hover {
+    background-color: #ff784e;
+}
+.contact-section button:active {
+    background-color: green;
+}
+.contact-section button:focus {
+    background-color: rgb(39, 155, 39);
+    transform: scale(1.01);
+}
+
+
+
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: #333;
+    color: white;
+}
+
+footer ul li {
+    display: inline;
+    
+    font-size: 12px;
+    font-weight: 400;
+    padding: 0px 10px;
+}
+
+footer ul li:not(:last-of-type) {
+    border-right: 0.6px solid white;
+}
+
+footer ul li a{
+    color: gold;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: white;
+}  
+
+/* fixed button */
+
+.fixed-button {
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    background-color: green;
+    position: fixed;
+    bottom: 40px;
+    right: 20px;
+    text-align: center;
+   
+}
+
+.fixed-button .svg-fixed {
+    width: 25px;
+    height: 25px;
+    margin-top: 2.5px;
+    fill:white;
+    
+}
+
